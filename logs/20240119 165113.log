@@ -1,0 +1,12 @@
+INFO	2024-01-19 16:51:21,125	[web_page.py:37]	输入文本：自动化
+INFO	2024-01-19 16:51:21,201	[web_page.py:41]	点击元素：//input[@type="submit"]
+INFO	2024-01-19 16:51:22,121	[web_page.py:49]	可见元素：//span[contains(text(), "百度为您找到以下结果")]
+INFO	2024-01-19 16:51:22,285	[web_page.py:79]	生成图片：/Users/shao.xiaoping/Documents/TW-Project/playwright_pytest_demo/file/picture/搜索结果页面展示正常51521.png
+INFO	2024-01-19 16:51:27,901	[web_page.py:37]	输入文本：学习
+INFO	2024-01-19 16:51:27,925	[web_page.py:41]	点击元素：//input[@type="submit"]
+INFO	2024-01-19 16:51:28,837	[web_page.py:49]	可见元素：//span[contains(text(), "百度为您找到以下结果")]
+INFO	2024-01-19 16:51:29,061	[web_page.py:79]	生成图片：/Users/shao.xiaoping/Documents/TW-Project/playwright_pytest_demo/file/picture/搜索结果页面展示正常54034.png
+INFO	2024-01-19 16:51:29,218	[tools.py:26]	复制allure配置文件到temp目录下用来在allure report中展示
+INFO	2024-01-19 16:51:32,770	[tools.py:42]	Report successfully generated to /Users/shao.xiaoping/Documents/TW-Project/playwright_pytest_demo/report
+
+INFO	2024-01-19 16:51:32,770	[tools.py:43]	生成allure测试报告

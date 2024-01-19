@@ -1,0 +1,47 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Xiaopings-MacBook-Pro.local",
+    "children" : [ {
+      "name" : "91537-MainThread",
+      "children" : [ {
+        "name" : "百度搜索 [\\u81ea\\u52a8\\u5316]",
+        "uid" : "1d5dc1c0364f7b9b",
+        "parentUid" : "b0e3259e6e2bb059a5100648ec319d8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705654274084,
+          "stop" : 1705654282286,
+          "duration" : 8202
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "自动化" ]
+      }, {
+        "name" : "百度搜索 [\\u5b66\\u4e60]",
+        "uid" : "f766627c4b956855",
+        "parentUid" : "b0e3259e6e2bb059a5100648ec319d8b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1705654282288,
+          "stop" : 1705654289062,
+          "duration" : 6774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "学习" ]
+      } ],
+      "uid" : "b0e3259e6e2bb059a5100648ec319d8b"
+    } ],
+    "uid" : "880fc1c5ef3e6c5ac2d70f685fe43bea"
+  } ]
+}

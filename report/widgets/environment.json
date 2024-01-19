@@ -1,0 +1,25 @@
+[ {
+  "values" : [ "Tester" ],
+  "name" : "TestLeader"
+}, {
+  "values" : [ "Xiaoping" ],
+  "name" : "Tester"
+}, {
+  "values" : [ "Chrome" ],
+  "name" : "Browser"
+}, {
+  "values" : [ "119.0.6045.160" ],
+  "name" : "Browser.Version"
+}, {
+  "values" : [ "dev" ],
+  "name" : "Stand"
+}, {
+  "values" : [ "https://baidu.com" ],
+  "name" : "BaseUrl"
+}, {
+  "values" : [ "3.8.7" ],
+  "name" : "python.Version"
+}, {
+  "values" : [ "Playwright pytest demo" ],
+  "name" : "Project"
+} ]

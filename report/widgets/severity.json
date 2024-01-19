@@ -1,0 +1,21 @@
+[ {
+  "uid" : "f766627c4b956855",
+  "name" : "百度搜索 [\\u5b66\\u4e60]",
+  "time" : {
+    "start" : 1705654282288,
+    "stop" : 1705654289062,
+    "duration" : 6774
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d5dc1c0364f7b9b",
+  "name" : "百度搜索 [\\u81ea\\u52a8\\u5316]",
+  "time" : {
+    "start" : 1705654274084,
+    "stop" : 1705654282286,
+    "duration" : 8202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

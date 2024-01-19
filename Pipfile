@@ -1,0 +1,22 @@
+[[source]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+verify_ssl = true
+name = "aliyun"
+
+[packages]
+allure-pytest-bdd = "==2.9.43"
+allure-python-commons = "==2.9.43"
+pytest-bdd = "==4.0.2"
+pyyaml = "==5.4.1"
+requests = "==2.25.1"
+zipp = "==3.4.1"
+pyautogui = "*"
+pytest = "==6.2.4"
+pytest-playwright = "*"
+playwright ="==1.40.0"
+jinja2 = "==3.0.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
