@@ -34,7 +34,6 @@ jobs:
         run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
       - run: pipenv install wheel
       - run: pipenv install
-      - name: Active virtual env
-        run: pipenv shell
+      - run: pipenv shell
       - name: Run test cases and generate report
         run: python run.py
