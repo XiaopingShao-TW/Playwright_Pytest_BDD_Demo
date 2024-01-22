@@ -37,3 +37,18 @@ jobs:
       - run: pipenv run python -m playwright install
       - name: Run test cases and generate report
         run: pipenv run python run.py
+      - name: Build test report
+        uses: simple-elf/allure-report-action@v1.7
+        if: always()
+        with:
+            allure_results: temp
+            allure_history: report
+      - name: Publish test report
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_branch: main
+            publish_dir: report
+
+
