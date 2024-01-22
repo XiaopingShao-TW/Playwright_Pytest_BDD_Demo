@@ -41,5 +41,3 @@ def generate_allure_report():
         log.info(os.popen(mac_cli).read())
         log.info(os.popen(open_report).read())
     log.info('生成allure测试报告')
-
-def open_allure_report():
