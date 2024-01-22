@@ -31,13 +31,9 @@ def generate_allure_report():
     if get_sys() == 'windows':
         allure_pkg = os.path.join(cm.base_dir, 'allure', 'bin', 'allure.bat')
         win_cli = '{} generate {} -o {} --clean'.format(allure_pkg, test_result, test_report)
-        open_report = '{} open -h 127.0.0.1 -p 8883 {}'.format(allure_pkg, test_report)
         log.info(os.popen(win_cli).read())
-        log.info(os.popen(open_report).read())
     else:
         allure_pkg = os.path.join(cm.base_dir, 'allure', 'bin', 'allure')
         mac_cli = 'chmod a+x %s;%s generate %s -o %s --clean' % (allure_pkg, allure_pkg, test_result, test_report)
-        open_report = '{} open -h 127.0.0.1 -p 8883 {}'.format(allure_pkg, test_report)
         log.info(os.popen(mac_cli).read())
-        log.info(os.popen(open_report).read())
     log.info('生成allure测试报告')
