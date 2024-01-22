@@ -34,6 +34,6 @@ jobs:
         run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
       - run: pipenv install wheel
       - run: pipenv install
-      - run: playwright install
+      - run: pipenv run python -m playwright install
       - name: Run test cases and generate report
         run: pipenv run python run.py
