@@ -29,13 +29,13 @@ def move_environment_file():
 def generate_allure_report():
     test_result = cm.temp_path
     test_report = cm.report_path
-    if get_sys() == 'windows':
+    if get_sys() == 'windows' or get_sys() == 'linux':
         allure_pkg = os.path.join(cm.base_dir, 'allure', 'bin', 'allure.bat')
         win_cli = '{} generate {} -o {} --clean'.format(allure_pkg, test_result, test_report)
         log.info(os.popen(win_cli).read())
-    elif get_sys() == 'linux':
-        linux_cli = 'allure generate {} -o {} --clean'.format(test_result, test_report)
-        log.info(os.popen(linux_cli).read())
+    # elif get_sys() == 'linux':
+    #     linux_cli = 'allure generate {} -o {} --clean'.format(test_result, test_report)
+    #     log.info(os.popen(linux_cli).read())
     else:  # Mac
         allure_pkg = os.path.join(cm.base_dir, 'allure', 'bin', 'allure')
         mac_cli = 'chmod a+x %s;%s generate %s -o %s --clean' % (allure_pkg, allure_pkg, test_result, test_report)
