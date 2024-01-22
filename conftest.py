@@ -7,7 +7,7 @@ from utils.tools import ini_file_dic
 @pytest.fixture(scope='module')
 def page():
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=False)
+        browser = playwright.chromium.launch(headless=True)
         context = browser.new_context(
             ignore_https_errors=True,
             viewport={
