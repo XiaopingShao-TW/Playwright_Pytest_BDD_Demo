@@ -12,10 +12,19 @@ class ConfigManager(object):
     log_dir_path = os.path.join(base_dir, 'logs')
     # 截图
     png_path = os.path.join(base_dir, 'file', 'picture')
+    if not os.path.exists(png_path):
+        os.mkdir(png_path)
+    os.system('sudo chmod -R 777 %s' % png_path)
     # 测试结果临时存放目录
     temp_path = os.path.join(base_dir, 'temp')
+    if not os.path.exists(temp_path):
+        os.mkdir(temp_path)
+    os.system('sudo chmod -R 777 %s' % temp_path)
     # 测试报告存放目录
     report_path = os.path.join(base_dir, 'report')
+    if not os.path.exists(report_path):
+        os.mkdir(report_path)
+    os.system('sudo chmod -R 777 %s' % report_path)
     # resource
     resource_path = os.path.join(base_dir, 'resource')
     # allure报告配置文件
