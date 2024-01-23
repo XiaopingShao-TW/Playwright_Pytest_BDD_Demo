@@ -40,6 +40,8 @@ jobs:
           pipenv install
       - name: Ensure browsers are installed
         run: pipenv run python -m playwright install
+      - name: Set up PYTHONPATH
+        run: echo "${{ github.workspace }}/mylibrary" >> $GITHUB_PATH
       - name: Run test cases
         run: pytest -s --alluredir=temp -m smoke
       - uses: actions/upload-artifact@v3
