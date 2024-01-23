@@ -1,8 +1,0 @@
-INFO	2024-01-23 14:26:36,959	[web_page.py:37]	输入文本：自动化
-INFO	2024-01-23 14:26:37,143	[web_page.py:41]	点击元素：//input[@type="submit"]
-INFO	2024-01-23 14:26:38,018	[web_page.py:49]	可见元素：//span[contains(text(), "百度为您找到以下结果")]
-INFO	2024-01-23 14:26:38,207	[web_page.py:79]	生成图片：/Users/shao.xiaoping/Documents/TW-Project/Playwright_Pytest_BDD_Demo/file/picture/搜索结果页面展示正常10730.png
-INFO	2024-01-23 14:26:38,507	[web_page.py:37]	输入文本：学习
-INFO	2024-01-23 14:26:38,529	[web_page.py:41]	点击元素：//input[@type="submit"]
-INFO	2024-01-23 14:26:39,413	[web_page.py:49]	可见元素：//span[contains(text(), "百度为您找到以下结果")]
-INFO	2024-01-23 14:26:39,646	[web_page.py:79]	生成图片：/Users/shao.xiaoping/Documents/TW-Project/Playwright_Pytest_BDD_Demo/file/picture/搜索结果页面展示正常97270.png

@@ -1,4 +1,0 @@
-INFO	2024-01-22 12:03:38,078	[tools.py:26]	复制allure配置文件到temp目录下用来在allure report中展示
-INFO	2024-01-22 12:03:42,086	[tools.py:42]	Report successfully generated to /Users/shao.xiaoping/Documents/TW-Project/Playwright_Pytest_BDD_Demo/report
-
-INFO	2024-01-22 12:03:42,087	[tools.py:43]	生成allure测试报告
