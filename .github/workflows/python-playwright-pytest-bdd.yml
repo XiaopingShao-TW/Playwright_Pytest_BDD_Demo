@@ -41,13 +41,13 @@ jobs:
       - name: Ensure browsers are installed
         run: pipenv run python -m playwright install
       - name: Run test cases
-        run: pipenv run pytest -s --alluredir=temp -m smoke
+        run: pipenv run python run.py
       - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: playwright-traces_and_results
           path: |
-            temp/
+            report/
             *trace.zip
 
 
