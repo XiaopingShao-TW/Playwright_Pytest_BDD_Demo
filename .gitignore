@@ -3,3 +3,7 @@ temp/*
 report/*
 file/picture/*
 .idea/*
+/temp/
+/report/
+/file/picture/
+/logs/
