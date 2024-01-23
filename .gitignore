@@ -1,1 +1,5 @@
-
+logs/*
+temp/*
+report/*
+file/picture/*
+.idea/*
