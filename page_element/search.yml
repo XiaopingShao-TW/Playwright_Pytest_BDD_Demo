@@ -1,3 +1,0 @@
-搜索输入框: //*[@id="kw"]
-搜索按钮: //input[@type="submit"]
-搜索结果: //span[contains(text(), "百度为您找到以下结果")]
