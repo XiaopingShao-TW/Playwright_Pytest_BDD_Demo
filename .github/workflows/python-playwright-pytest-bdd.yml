@@ -46,7 +46,7 @@ jobs:
         run: pipenv run python -m playwright install
 
       - name: Run test cases
-        run: pipenv run python.py
+        run: pipenv run python run.py
 
       - uses: actions/upload-artifact@v3
         if: always()
