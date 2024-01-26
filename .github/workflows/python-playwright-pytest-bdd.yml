@@ -54,7 +54,7 @@ jobs:
         run: pipenv run pytest -v --gherkin-terminal-reporter -s --color=yes --alluredir=../${{ vars.ALLURE_RESULTS_PATH }} -m smoke
 
       - name: Get Allure history # Step to retrieve Allure history
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         if: always() # Execute even if previous steps fail
         continue-on-error: true # Continue execution even if the step fails
         with:
@@ -71,7 +71,7 @@ jobs:
 
       - name: Deploy Allure report to GitHub Pages # Step to deploy Allure report to GitHub Pages
         if: always() # Execute even if previous steps fail
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # Provide the GitHub token for authentication
           publish_branch: gh-pages # Specify the branch to publish the report to
