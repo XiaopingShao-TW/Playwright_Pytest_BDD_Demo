@@ -1,5 +1,5 @@
 
-# 项目介绍
+# 项目介绍 🚀
 Pytest + Playwright + Allure UI自动化demo
 目前有的功能：
 - UI自动化POM设计模式 
@@ -49,7 +49,7 @@ Pytest + Playwright + Allure UI自动化demo
 playwright install
 ```
 
-## 运行测试并生成报告 🚀
+## 运行测试并生成报告 🏃
 ```shell
 python run.py
 ```
