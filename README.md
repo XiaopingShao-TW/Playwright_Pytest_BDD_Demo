@@ -41,8 +41,8 @@ Pytest + Playwright + Allure UI自动化demo
 ## 环境准备 🛠️
 - Python 3.8
 - 环境用的是pipenv来管理的：
- - 如果是自主安装搭建环境Pytest + Playwright + Allure + BDD环境，可以参考pipfile中的依赖逐一进行安装， [安装参考](https://www.jianshu.com/p/8fff583ccb5b) 🎈
- - 如果直接是下载本项目进行搭建，安装好pipenv后可以直接安装依赖：pipenv install （会自动安装pipfile中的所有依赖）
+   如果是自主安装搭建环境Pytest + Playwright + Allure + BDD环境，可以参考pipfile中的依赖逐一进行安装， [安装参考](https://www.jianshu.com/p/8fff583ccb5b) 🎈
+   如果直接是下载本项目进行搭建，安装好pipenv后可以直接安装依赖：pipenv install （会自动安装pipfile中的所有依赖）
 
 ## 安装浏览器 🌐
 ```shell
