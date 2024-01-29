@@ -45,13 +45,14 @@ jobs:
       - name: Ensure browsers are installed
         run: pipenv run python -m playwright install
 
-      - name: Prepare Allure history # Step to prepare Allure history directory
-        run: |
-          cd ..
-          mkdir -p ${{ vars.ALLURE_RESULTS_PATH }}
-
       - name: Run test cases
-        run: pipenv run pytest -v --gherkin-terminal-reporter -s --color=yes --alluredir=../${{ vars.ALLURE_RESULTS_PATH }} -m smoke
+        run: pipenv run pytest -v --gherkin-terminal-reporter -s --color=yes --alluredir=temp -m smoke
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: temp
+          path: temp
+          retention-days: 20
 
       - name: Get Allure history # Step to retrieve Allure history
         uses: actions/checkout@v4
@@ -64,10 +65,12 @@ jobs:
       - name: Generate allure report action # Step to generate Allure report
         uses: simple-elf/allure-report-action@master
         if: always() # Execute even if previous steps fail
+        id: allure-report
         with:
-          allure_results: ${{ vars.ALLURE_RESULTS_PATH }} # Specify the directory containing Allure results
+          allure_results: temp # Specify the directory containing Allure results
           allure_history: allure-history # Specify the directory to store Allure history
-          keep_reports: 5 # Specify the number of previous reports to keep
+          allure_report: allure-report
+          keep_reports: 20 # Specify the number of previous reports to keep
 
       - name: Deploy Allure report to GitHub Pages # Step to deploy Allure report to GitHub Pages
         if: always() # Execute even if previous steps fail
