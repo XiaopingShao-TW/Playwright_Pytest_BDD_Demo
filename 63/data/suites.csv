@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jan 29 07:02:40 GMT 2024","Mon Jan 29 07:02:42 GMT 2024","2075","","","","","","百度搜索 [\u5b66\u4e60]",""
+"passed","Mon Jan 29 07:02:32 GMT 2024","Mon Jan 29 07:02:40 GMT 2024","7601","","","","","","百度搜索 [\u81ea\u52a8\u5316]",""
