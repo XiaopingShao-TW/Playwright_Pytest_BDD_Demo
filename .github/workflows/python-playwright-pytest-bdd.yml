@@ -46,12 +46,12 @@ jobs:
         run: pipenv run python -m playwright install
 
       - name: Run test cases
-        run: pipenv run pytest -v --gherkin-terminal-reporter -s --color=yes --alluredir=temp -m smoke
+        run: pipenv run python run.py
 
       - uses: actions/upload-artifact@master
         with:
-          name: Test-allure-results
-          path: temp
+          name: Test-allure-report
+          path: report # upload the latest report file
           retention-days: 20
 
       - name: Get Allure history # Step to retrieve Allure history
